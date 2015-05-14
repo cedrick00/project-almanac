@@ -12,7 +12,7 @@
 <body>
     <div class="container-fluid">
       <div class="row">
-        @yield('content')        
+        @yield('content')       
       </div>
     </div>
   	@section('js')

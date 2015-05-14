@@ -11,12 +11,10 @@
 |
 */
 
-Route::get('/', 'AdminController@getlogin');
-Route::get('admin', 'AdminController@getlogin');
+
 
 Route::controller('admin', 'AdminController');
 Route::controller('users', 'UsersController');
-
 Route::post('register', array('before' => 'csrf', function()
 {
     return 'You gave a valid CSRF token!';

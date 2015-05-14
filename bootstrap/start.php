@@ -25,7 +25,7 @@ $app = new Illuminate\Foundation\Application;
 */
 
 $env = $app->detectEnvironment(array(
-	'dev' => array('Miguel-Perezs-MacBook-Pro.local') //type "hostname" in your terminal
+	'dev' => array('cedrick-System-Product-Name') //type "hostname" in your terminal
 ));
 
 /*

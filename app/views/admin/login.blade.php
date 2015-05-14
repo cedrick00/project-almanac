@@ -1,4 +1,3 @@
-@extends('admin.tpl.main')
 
 @section('meta-title')
 	Login
@@ -14,7 +13,7 @@
 	{{ Form::open(array('url'=>'admin/login', 'role="form" class'=>'form-signin')) }}
 	   
 		<h2 class="form-signup-heading">Please Login</h2>	
-	
+		
 		@if($errors->all())
 			<ul>
 				@foreach($errors->all() as $error)
@@ -40,7 +39,11 @@
 
 		<input type="email" name="email" class="form-control" value="{{ Input::old('email') }}" placeholder="Email address" required autofocus/>
 		<input type="password" name="password" class="form-control" placeholder="Password" required />
-		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		<button class="btn btn-info btn-block" type="submit">Sign in</button>
+		<br>
+			<div align="center">
+				 <a href="{{ URL::to('admin/register') }}">Create an 	Account</a>
+	 		</div>
 	{{ Form::close() }}    
 @stop
 
